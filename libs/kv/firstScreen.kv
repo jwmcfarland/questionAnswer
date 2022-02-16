@@ -1,0 +1,20 @@
+#:kivy 1.11.1
+
+<FirstScreen>
+    name: "firstScreen"
+    MDBoxLayout:
+        orientation: 'vertical'
+        MDLabel:
+            text: "firstScreenLabel"
+            halign: "center"
+        MDRaisedButton:
+            pos_hint: {"center_x":0.5,"center_y":0.5}
+            text: "firstScreenButton"
+            on_press: root.toSecondScreen()
+        MDLabel:
+            text: ""
+            halign: "center"
+        MDLabel:
+            text: ""
+            halign: "center"
+
